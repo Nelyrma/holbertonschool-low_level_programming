@@ -3,14 +3,12 @@
 /**
  * _abs - compute the absolute value of an integer
  * @n : the  integer
- * Return: Always 0
+ * Return: the absolute value
  */
 
 int _abs(int n)
 {
-	int absolute_value = abs(n);
+	int absolute_value = n * ((n > 0) - (n < 0));
 
-	_putchar('absolute_value');
-	_putchar('\n');
-	return (0);
+	return (absolute_value);
 }
