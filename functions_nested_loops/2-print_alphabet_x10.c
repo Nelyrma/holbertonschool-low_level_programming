@@ -10,11 +10,12 @@ void print_alphabet_x10(void)
 	int i = 0;
 	char alpha;
 
-	while (i <= 9)
+	for (i = 0, i <= 9, i++)
 	{
 		for (alpha = 'a', alpha <= 'z', alpha++)
+		{
 			_putchar(alpha);
+		}
 		_putchar('\n');
-		i++;
 	}
 }
