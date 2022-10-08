@@ -11,9 +11,6 @@ void print_triangle(int size)
 	int width;
 	int triangle;
 
-	if (size <= 0)
-		_putchar('\n');
-
 	for (height = 0; height <= size; height++)
 	{
 		for (width =  1; width <= (size - height); width++)
