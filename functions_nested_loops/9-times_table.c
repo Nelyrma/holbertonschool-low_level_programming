@@ -12,12 +12,11 @@ void times_table(void)
 
 	for (n = 0; n <= 9; n++)
 	{
-	
 		for (m = 0; m <= 9; m++)
 		{
+			p = m * n;
 			_putchar(',');
 			_putchar(' ');
-			p = m * n;
 
 			if (p <= 9)
 			{
