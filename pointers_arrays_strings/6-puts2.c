@@ -23,13 +23,13 @@ int _strlen(char *s)
  * @str: the string
  */
 
-void puts2(char *str);
+void puts2(char *str)
 {
 	int i;
 
-	for (i = 0; i < _strlen(char *s); i += 2)
+	for (i = 0; str[i] != '\0' && i < _strlen(str); i += 2)
 	{
-		_putchar(*s);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
