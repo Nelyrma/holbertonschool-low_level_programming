@@ -32,7 +32,7 @@ char *_strcpy(char *dest, char *src)
 	int i;
 	int n = _strlen(src);
 
-	for (i = 0; i < n ; i++)
+	for (i = 0; i <= n ; i++)
 		dest[i] = src[i];
 
 	return (dest);
