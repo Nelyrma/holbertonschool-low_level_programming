@@ -16,9 +16,7 @@ char *cap_string(char *s)
 		{
 			s[i] = s[i] - 32;
 		}
-		else if
-		{
-			(s[i - 1] == ' ' ||
+		else if (s[i - 1] == ' ' ||
 			s[i - 1] == '\t' ||
 			s[i - 1] == '\n' ||
 			s[i - 1] == ',' ||
@@ -33,9 +31,8 @@ char *cap_string(char *s)
 			s[i - 1] == '}' ||
 			i == 0)
 				s[i] = s[i] - 32;
-
 			i++;
-		}
 	}
+
 	return (s);
 }
