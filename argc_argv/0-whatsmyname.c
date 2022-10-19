@@ -1,13 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 
-void main(int argc, char *argv[])
-{
-	int i;
+/**
+ * main - print the name of the program
+ * @argc: the argument count
+ * @argv: the argument vector
+ * Return: Always 0
+ */
 
-	for (i = 0; i < argc; i++)
+int main(int argc, char *argv[])
+{
+	if (argc > 0)
 	{
-		_putchar("%s ", argv[0]);
+		printf("%s\n", argv[0]);
 	}
 	return (0);
 }
