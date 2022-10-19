@@ -5,7 +5,7 @@ void main(int argc, char *argv[])
 {
 	int i;
 
-	for (i = 0, i < argc, i++)
+	for (i = 0; i < argc; i++)
 	{
 		_putchar("%s ", argv[0]);
 	}
