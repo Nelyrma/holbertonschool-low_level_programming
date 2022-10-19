@@ -5,8 +5,8 @@
 /**
  * main - multiplies two numbers
  * @argc: the argument count
- * @argv: the argument vector
- * Return: Always 0
+ * @argv: the numbers to multiply
+ * Return: O if not error, else 1
  */
 
 int main(int argc, char *argv[])
@@ -20,11 +20,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	a = atoi(argv[0]);
-	b = atoi(argv[1]);
-
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 	mul = a * b;
-
 	printf("%d\n", mul);
 	return (0);
 
