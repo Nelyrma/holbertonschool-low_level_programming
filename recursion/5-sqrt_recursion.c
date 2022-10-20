@@ -1,4 +1,4 @@
-#include <stio.h>
+#include <stdio.h>
 
 /**
  * square_root - check the natural square root of a number
