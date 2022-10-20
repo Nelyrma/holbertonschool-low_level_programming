@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * square_root - check the natural square root of a number
+ * square - check the natural square root of a number
  * @a: the square root
  * @n : the number
  * Return: carree if n have natural square root, -1 if not
  */
 
-int square_root(int a, int n)
+int square(int a, int n)
 {
 	if (a * a > n)
 		return (-1);
@@ -15,7 +15,7 @@ int square_root(int a, int n)
 	if (a * a == n)
 		return (a);
 
-	return (square_root(a, n  + 1));
+	return (square(a, n  + 1));
 }
 
 /**
@@ -29,5 +29,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 
-	return (square_root(n, 0));
+	return (square(n, 0));
 }
