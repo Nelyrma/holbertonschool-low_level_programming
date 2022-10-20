@@ -2,19 +2,20 @@
 
 /**
  * square_root - check the natural square root of a number
+ * @a: the square root
  * @n : the number
  * Return: carree if n have natural square root, -1 if not
  */
 
-int square_root(int n)
+int square_root(int a, int n)
 {
-	int a;
-
 	if (a * a > n)
 		return (-1);
 
 	if (a * a == n)
-		return (square_root(a, n  + 1));
+		return (a);
+
+	return (square_root(a, n  + 1));
 }
 
 /**
@@ -27,5 +28,6 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	printf(square_root(n, 0));
+
+	return (square_root(n, 0));
 }
