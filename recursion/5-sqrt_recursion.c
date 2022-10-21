@@ -7,7 +7,7 @@
  * Return: carree if n have natural square root, -1 if not
  */
 
-int square(int a, int n)
+int square(int n, int a)
 {
 	if (a * a > n)
 		return (-1);
