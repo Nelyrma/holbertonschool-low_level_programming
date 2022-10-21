@@ -15,7 +15,7 @@ int square(int a, int n)
 	if (a * a == n)
 		return (a);
 
-	return (square(a, n  + 1));
+	return (square(n, a  + 1));
 }
 
 /**
