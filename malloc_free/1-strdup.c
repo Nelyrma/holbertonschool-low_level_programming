@@ -19,11 +19,10 @@ char *_strdup(char *str)
 
 	while (str[i])
 	{
-		size++;
-		i++;
+		size++, i++;
 	}
-	size++;
 
+	size++;
 	new_string = malloc(sizeof(char) * size);
 
 	if (new_string == 0)
