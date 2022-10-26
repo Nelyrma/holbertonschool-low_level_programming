@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	pointer = malloc(sizeof(*pointer) * len);
 
-	if (pointer == O)
+	if (pointer == 0)
 		return (NULL);
 
 	for (i = 0; i < _strlen(s1); i++)
