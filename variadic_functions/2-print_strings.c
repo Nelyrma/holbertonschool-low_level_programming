@@ -10,10 +10,11 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
+	va_list list;
 	unsigned int i;
 	char *hold;
-	va_list list;
 
+	va_start(list, n);
 	for (i = 0; i < n; i++)
 	{
 		hold = va_arg(list, char *);
