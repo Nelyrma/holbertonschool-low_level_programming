@@ -11,15 +11,12 @@ int pop_listint(listint_t **head)
 	listint_t *current;
 	int temp;
 
-	current = malloc(sizeof(listint_t));
-	if (current == NULL)
-		return (0);
-
 	if (*head == NULL)
 		return (0);
 
+	current = *head;
 	temp = (*head)->n;
-	current = (*head)->next;
+	*head = (*head)->next;
 	free(current);
 
 	return (temp);
