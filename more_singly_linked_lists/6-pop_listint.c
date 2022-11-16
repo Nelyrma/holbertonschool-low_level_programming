@@ -13,10 +13,10 @@ int pop_listint(listint_t **head)
 
 	current = malloc(sizeof(listint_t));
 	if (current == NULL)
-		return (NULL);
+		return (0);
 
 	if (*head == NULL)
-		return (NULL);
+		return (0);
 
 	temp = (*head)->n;
 	current = (*head)->next;
