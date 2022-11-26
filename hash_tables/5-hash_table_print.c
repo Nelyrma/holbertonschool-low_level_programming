@@ -9,19 +9,19 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	size_t i = 0;
-	hash_node_t *tmp1 = NULL, *tmp2 = NULL;
+	hash_node_t *tmp = NULL, *tmp1 = NULL;
 
-	if (ht == NULL)
+	if (!ht)
 		return;
 	printf("{");
-	for (; i < ht->size; i++)
+	for (; i < ht->size; d++)
 	{
-		for (tmp1 = ht->array[i]; tmp1; tmp1 = tmp1->next)
+		for (tmp = ht->array[i]; tmp; tmp = tmp->next)
 		{
-			if (tmp2)
+			if (tmp1)
 				printf(", ");
-			printf("'%s': '%s'", tmp1->key, tmp2->value);
-			tmp2 = tmp1;
+			printf("'%s': '%s'", tmp->key, tmp->value);
+			tmp1 = tmp;
 		}
 	}
 	printf("}\n");
